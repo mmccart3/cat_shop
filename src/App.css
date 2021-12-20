@@ -1,3 +1,8 @@
+body {
+  background-color: rgb(221, 255, 188);
+  margin: 0;
+}
+
 .display{
   display: flex;
   flex-wrap: wrap;
@@ -5,25 +10,54 @@
 }
 
 h1{
-  text-align: center;
+  text-align: start;
+  color: rgb(145, 199, 136);
+  font-size: 75px;
   width: 100%;
-  margin: 5px;
+  height: 125px;
+  background-color: rgb(254, 255, 222);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.nav {
+  background-color: rgb(254, 255, 222);
+  display: flex;
+  margin: 0;
+}
+
+.choice:link, .choice:visited {
+  text-decoration: none;
+  color: rgb(137, 181, 175);
+}
+
+.choice:hover, .choice:active {
+  color: whitesmoke;
 }
 
 .card{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  border: black solid 2px;
+  justify-content: space-evenly;
+  border: none; 
+  box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.5);
+  /* border: black solid 2px; */
   text-align: center;
   width: 18%;
   height: 300px;
   margin: 5px;
+  border-radius: 2%;
+}
+
+.card:hover {
+  transform: scale(1.025);
 }
 
 img{
   width: 100%;
   height: 75%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
 }
 
 .para{
@@ -43,7 +77,14 @@ p{
 }
 
 button{
-  width: 30%;
-  height: 20%;
+  width: 40%;
+  height: 10%;
   margin: 5px;
+  border: none;
+  background-color: rgb(221, 255, 188);
+}
+
+button:hover, button:focus {
+  background-color: rgb(254, 255, 222);
+  border-radius: 5%;
 }
